@@ -10,7 +10,7 @@ Requires installed Google Chrome. Chrome's binaries should be in PATH.
 
 ### Clone repository
 
-git clone git@github.com:sbezugliy/calculus.git
+    $ git clone git@github.com:sbezugliy/calculus.git
 
 ### And then execute:
     $ cd ./calculus
@@ -18,6 +18,6 @@ git clone git@github.com:sbezugliy/calculus.git
 
 ## Usage
 
-./bin/run
+    $ ./bin/run
 
 
