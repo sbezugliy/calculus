@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
     spec.metadata["allowed_push_host"] = "https://codenv.top"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "https://codenv.top"
+    spec.metadata["source_code_uri"] = "https://github.com/sbezugliy/calculus.git"
     spec.metadata["changelog_uri"] = "https://codenv.top"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
