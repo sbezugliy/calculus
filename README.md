@@ -4,6 +4,8 @@
 
 Uses [flammarion](https://github.com/zach-capalbo/flammarion.git) gem for ui.
 
+![App sample](https://raw.githubusercontent.com/sbezugliy/calculus/master/pub/screen.png)
+
 ## Installation
 
 Requires installed Google Chrome. Chrome's binaries should be in PATH. 
