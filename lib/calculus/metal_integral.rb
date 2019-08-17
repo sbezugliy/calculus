@@ -1,4 +1,7 @@
 module Calculus
+
+  AXES_DEFAULTS = {x: 1, dx: 0.1, y: 1, dy: 0.1, z: 1, dz: 0.1}
+
   class Metal
 
     include Calculus::IntegrationHelpers
@@ -11,10 +14,11 @@ module Calculus
     attr_reader   :bar
     attr_reader   :mass
     attr_reader   :average_density
+    attr_reader   :min_density, :max_density
 
-    def initialize(x, dx, y, dy, z, dz)
-      @x, @y, @z = x, y, z
-      @dx ,@dy, @dz = dx ,dy, dz
+    def initialize(axes = AXES_DEFAULTS)
+      @x, @y, @z = axes[:x], axes[:y], axes[:z]
+      @dx ,@dy, @dz = axes[:dx], axes[:dy], axes[:dz]
       @min_density = 543 # kg/m^3, lithium
       @max_density = 22587 # kg/m^3, osmium 
     end
@@ -57,31 +61,31 @@ module Calculus
   end
 
   class Steel < Metal
-    def initialize(x, dx, y, dy, z, dz)
-      super(x, dx, y, dy, z, dz)
+    def initialize(axes = AXES_DEFAULTS)
+      super(axes)
       @min_density = 7000
       @max_density = 8000
     end
   end
 
   class Copper < Metal
-    def initialize(x, dx, y, dy, z, dz)
-      super(x, dx, y, dy, z, dz)
+    def initialize(axes = AXES_DEFAULTS)
+      super(axes)
       @min_density = 8020
       @max_density = 8960
     end
   end
   class Lead < Metal
-    def initialize(x, dx, y, dy, z, dz)
-      super(x, dx, y, dy, z, dz)
+    def initialize(axes = AXES_DEFAULTS)
+      super(axes)
       @min_density = 10660
       @max_density = 11340
     end
   end
 
   class Mercury < Metal
-    def initialize(x, dx, y, dy, z, dz)
-      super(x, dx, y, dy, z, dz)
+    def initialize(axes = AXES_DEFAULTS)
+      super(axes)
       @min_density = 13534
       @max_density = 13534
     end

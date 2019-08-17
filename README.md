@@ -2,7 +2,7 @@
 
 ### Just for fun.
 
-Uses flammarion gem for ui.
+Uses [flammarion](https://github.com/zach-capalbo/flammarion.git) gem for ui.
 
 ## Installation
 
