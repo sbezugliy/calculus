@@ -8,8 +8,8 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.6.0)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -34,7 +34,7 @@ GEM
     kramdown (2.1.0)
     launchy (2.4.3)
       addressable (~> 2.3)
-    public_suffix (3.1.1)
+    public_suffix (5.0.0)
     rake (10.5.0)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
